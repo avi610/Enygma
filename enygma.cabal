@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: db61f9423a8a957a49e68bcf4790822f8acc4c6868ba0aac7a6684ba1b3a0170
+-- hash: 2a0390a6a37cc26327ad68c325953c13a22ac5fc73256959a0e526b19e3fb7cf
 
 name:           enygma
 version:        0.1.0.0
@@ -34,6 +34,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , scotty
   default-language: Haskell2010
 
 executable enygma-exe
@@ -46,6 +47,7 @@ executable enygma-exe
   build-depends:
       base >=4.7 && <5
     , enygma
+    , scotty
   default-language: Haskell2010
 
 test-suite enygma-test
@@ -59,4 +61,5 @@ test-suite enygma-test
   build-depends:
       base >=4.7 && <5
     , enygma
+    , scotty
   default-language: Haskell2010
